@@ -7,11 +7,12 @@ var db = builder.AddSqlServer("sqlserver",
     .WithDataVolume("sqlserver")
     .AddDatabase("sqldb");
 
-builder.AddProject<Projects.AspireDemoApp_MigrationService>("migration")
+var migration = builder.AddProject<Projects.AspireDemoApp_MigrationService>("migration")
     .WithReference(db);
 
 var apiService = builder.AddProject<Projects.AspireDemoApp_ApiService>("apiservice")
-    .WithReference(db);
+    .WithReference(db)
+    .WithReference(migration);
 
 builder.AddProject<Projects.AspireDemoApp_Web>("webfrontend")
     .WithExternalHttpEndpoints()

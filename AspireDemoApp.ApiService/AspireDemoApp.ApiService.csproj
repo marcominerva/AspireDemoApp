@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="Bogus" Version="35.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AspireDemoApp.ApiService.DataAccessLayer\AspireDemoApp.ApiService.DataAccessLayer.csproj" />
     <ProjectReference Include="..\AspireDemoApp.ServiceDefaults\AspireDemoApp.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\AspireDemoApp.Shared\AspireDemoApp.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspireDemoApp.ServiceDefaults\AspireDemoApp.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\AspireDemoApp.Shared\AspireDemoApp.Shared.csproj" />
   </ItemGroup>
 
 </Project>

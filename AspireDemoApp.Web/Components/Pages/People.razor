@@ -1,0 +1,61 @@
+﻿@page "/people"
+@rendermode InteractiveServer
+
+@using AspireDemoApp.Shared.Models
+
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject ApiClient ApiClient
+
+<PageTitle>People</PageTitle>
+
+<h1>People</h1>
+
+<p>This component demonstrates showing data loaded from a backend API service.</p>
+
+@if (people is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in people)
+            {
+                <tr>
+                    <td>@person.FirstName</td>
+                    <td>@person.LastName</td>
+                    <td>@person.City</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<div>
+    <button class="btn btn-primary" @onclick="AddPersonAsync">Add Person</button>
+</div>
+
+@code {
+    private Person[]? people;
+
+    protected override async Task OnInitializedAsync()
+    {
+        people = await ApiClient.GetPeopleListAsync();
+    }
+
+    private async Task AddPersonAsync()
+    {
+        await ApiClient.SavePersonAsync();
+        people = await ApiClient.GetPeopleListAsync();
+    }
+}

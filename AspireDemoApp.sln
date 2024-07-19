@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemoApp.AppHost", "AspireDemoApp.AppHost\AspireDemoApp.AppHost.csproj", "{78A8F6B8-E404-4F29-9BBE-29B96B183FB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDemoApp.AppHost", "AspireDemoApp.AppHost\AspireDemoApp.AppHost.csproj", "{78A8F6B8-E404-4F29-9BBE-29B96B183FB3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDemoApp.ServiceDefaults", "AspireDemoApp.ServiceDefaults\AspireDemoApp.ServiceDefaults.csproj", "{4F957104-F648-4B73-80B5-1A114C3AC471}"
 EndProject
@@ -15,9 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemoApp.ApiService.DataAccessLayer", "AspireDemoApp.ApiService.DataAccessLayer\AspireDemoApp.ApiService.DataAccessLayer.csproj", "{D05BE958-C9C4-44F8-936D-6FF71F7CADB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDemoApp.ApiService.DataAccessLayer", "AspireDemoApp.ApiService.DataAccessLayer\AspireDemoApp.ApiService.DataAccessLayer.csproj", "{D05BE958-C9C4-44F8-936D-6FF71F7CADB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemoApp.MigrationService", "AspireDemoApp.MigrationService\AspireDemoApp.MigrationService.csproj", "{AEC60B9A-1B88-45A9-A4AA-BDAAF75A60DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireDemoApp.MigrationService", "AspireDemoApp.MigrationService\AspireDemoApp.MigrationService.csproj", "{AEC60B9A-1B88-45A9-A4AA-BDAAF75A60DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemoApp.Shared", "AspireDemoApp.Shared\AspireDemoApp.Shared.csproj", "{A45C712E-7BCE-410E-B234-943B55112A6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{AEC60B9A-1B88-45A9-A4AA-BDAAF75A60DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC60B9A-1B88-45A9-A4AA-BDAAF75A60DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC60B9A-1B88-45A9-A4AA-BDAAF75A60DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45C712E-7BCE-410E-B234-943B55112A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45C712E-7BCE-410E-B234-943B55112A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45C712E-7BCE-410E-B234-943B55112A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45C712E-7BCE-410E-B234-943B55112A6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
